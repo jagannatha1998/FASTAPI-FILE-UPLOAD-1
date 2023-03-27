@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["jagannatha1998 <120552719+jagannatha1998@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = "^0.21.1"
+fastapi = "^0.95.0"
+python-multipart = "^0.0.6"
+google-cloud-storage = "^2.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+start="app.main:start"
